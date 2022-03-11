@@ -1,11 +1,11 @@
 package kz.beeline.beeplay.beeplay.entity;
 
-import lombok.Data;
+import kz.beeline.beeplay.beeplay.config.user.User;
 
 import javax.persistence.*;
 
 @Table(name = "CONTEST_WORK", indexes = {
-        @Index(name = "IDX_CONTESTWORK_user_id", columnList = "user_id"),
+//        @Index(name = "IDX_CONTESTWORK_user_id", columnList = "user_id"),
         @Index(name = "IDX_CONTESTWORK_contest_id", columnList = "contest_id")
 })
 @Entity
@@ -20,8 +20,8 @@ public class ContestWork {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     private Contest contest_id;
 
-    @OneToOne(fetch = FetchType.EAGER)
-    private User user;
+//    @OneToOne(fetch = FetchType.EAGER)
+//    private User user;
 
     @Lob
     @Column(name = "image", nullable = false)
@@ -45,14 +45,14 @@ public class ContestWork {
     public void setContest_id(Contest contest_id) {
         this.contest_id = contest_id;
     }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
+//
+//    public User getUser() {
+//        return user;
+//    }
+//
+//    public void setUser(User user) {
+//        this.user = user;
+//    }
 
     public String getImage() {
         return image;

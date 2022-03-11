@@ -1,0 +1,51 @@
+debug: false
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/beeplay
+    username: postgres
+    password: agahan02
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: 927279916554-2n4cgqrfbcj67qntqfshq93qmk0blrnq.apps.googleusercontent.com
+            clientSecret: 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
+            scope:
+              - email
+              - profile
+
+          facebook:
+            clientId: 1001147140834795
+            clientSecret: 2af1f0a42dff88c2d3cd7a55195b1e5b
+            scope:
+              - email
+              - public_profile
+              -
+#          discord:
+#            client-id: 951411072596836383
+#            client-secret: el4dCiuf-vaNH03eLg_B53gGTd19xmiw
+#            clientAuthenticationMethod: post
+#            authorizationGrantType: authorization_code
+#            scope:
+#              - identify
+#            redirectUriTemplate: "{baseUrl}/login/oauth2/code/discord"
+#            clientName: discord
+#            provider:
+#              discord:
+#                authorizationUri: https://discordapp.com/api/oauth2/authorize
+#                tokenUri: https://discordapp.com/api/oauth2/token
+#                userInfoUri: https://discordapp.com/api/users/@me
+#                usernameAttribute: username
+#                jwk-set-uri:

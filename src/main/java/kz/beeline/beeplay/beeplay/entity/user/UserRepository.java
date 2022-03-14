@@ -1,4 +1,4 @@
-package kz.beeline.beeplay.beeplay.config.user;
+package kz.beeline.beeplay.beeplay.entity.user;
 
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

@@ -1,7 +1,7 @@
 package kz.beeline.beeplay.beeplay.config;
 
-import kz.beeline.beeplay.beeplay.config.user.User;
-import kz.beeline.beeplay.beeplay.config.user.UserRepository;
+import kz.beeline.beeplay.beeplay.entity.user.User;
+import kz.beeline.beeplay.beeplay.entity.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

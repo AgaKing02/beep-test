@@ -1,7 +1,5 @@
 package kz.beeline.beeplay.beeplay.entity;
 
-import kz.beeline.beeplay.beeplay.config.user.User;
-
 import javax.persistence.*;
 
 @Table(name = "CONTEST_WORK", indexes = {

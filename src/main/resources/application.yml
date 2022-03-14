@@ -32,7 +32,7 @@ spring:
             scope:
               - email
               - public_profile
-              -
+#              -
 #          discord:
 #            client-id: 951411072596836383
 #            client-secret: el4dCiuf-vaNH03eLg_B53gGTd19xmiw

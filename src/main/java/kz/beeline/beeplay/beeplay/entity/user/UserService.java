@@ -1,8 +1,7 @@
-package kz.beeline.beeplay.beeplay.config.user;
+package kz.beeline.beeplay.beeplay.entity.user;
 
 import javax.transaction.Transactional;
 
-import kz.beeline.beeplay.beeplay.config.MyUserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

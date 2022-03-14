@@ -1,7 +1,7 @@
 package kz.beeline.beeplay.beeplay.config;
 
-import kz.beeline.beeplay.beeplay.config.user.Role;
-import kz.beeline.beeplay.beeplay.config.user.User;
+import kz.beeline.beeplay.beeplay.entity.user.Role;
+import kz.beeline.beeplay.beeplay.entity.user.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

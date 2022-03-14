@@ -1,4 +1,4 @@
-package kz.beeline.beeplay.beeplay.config.user;
+package kz.beeline.beeplay.beeplay.entity.user;
 
 import java.util.HashSet;
 import java.util.Set;
